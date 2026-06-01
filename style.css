@@ -1,0 +1,89 @@
+:root {
+  --bg: #0f172a;
+  --card: #1e293b;
+  --text: #ffffff;
+  --primary: #38bdf8;
+}
+
+.light {
+  --bg: #f1f5f9;
+  --card: #ffffff;
+  --text: #0f172a;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+  background: var(--bg);
+  color: var(--text);
+  transition: 0.3s;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* SEARCH */
+.search {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+}
+
+button {
+  padding: 10px;
+  border: none;
+  background: var(--primary);
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* CARD */
+.card {
+  background: var(--card);
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+/* FORECAST */
+.forecast {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 10px;
+}
+
+.forecast div {
+  background: var(--card);
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* ERROR */
+#error {
+  color: red;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  .search {
+    flex-direction: column;
+  }
+}

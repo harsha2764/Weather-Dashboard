@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Advanced Weather Dashboard</title>
+
+<link rel="stylesheet" href="style.css">
+<script defer src="script.js"></script>
+</head>
+
+<body>
+
+<div class="container">
+
+<header>
+  <h1>🌦️ Weather Dashboard</h1>
+
+  <button id="themeBtn">🌙</button>
+</header>
+
+<!-- SEARCH -->
+<div class="search">
+  <input type="text" id="cityInput" placeholder="Enter city...">
+  <button id="searchBtn">Search</button>
+  <button id="locationBtn">📍 My Location</button>
+</div>
+
+<!-- ERROR -->
+<p id="error"></p>
+
+<!-- CURRENT WEATHER -->
+<div class="card" id="weatherCard">
+  <h2 id="city"></h2>
+  <img id="icon" />
+  <h3 id="temp"></h3>
+  <p id="desc"></p>
+  <p id="humidity"></p>
+  <p id="wind"></p>
+</div>
+
+<!-- FORECAST -->
+<h2>5-Day Forecast</h2>
+<div class="forecast" id="forecast"></div>
+
+</div>
+
+</body>
+</html>
